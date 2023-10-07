@@ -1,0 +1,49 @@
+.contenedor__padre {
+    position: relative;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    gap: 1em;
+    width: 90vw;
+    height: 100vh;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.allBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--fondo-blur);
+    backdrop-filter: blur(50px);
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: all .5s;
+
+    overflow: hidden;
+    padding: 20px;
+}
+
+.allBox p {
+    padding: 50px;
+    font-size: .5em;
+    font-weight: 300;
+}
+
+.enfocado {
+    width: 50%;
+    height: 300px;
+    z-index: 10000;
+}
+
+.oculto {
+    display: none;
+}

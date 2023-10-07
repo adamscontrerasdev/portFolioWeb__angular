@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+
+.container__padre{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100vw;
+}
+.header__container {
+    position: fixed;
+    background: var(--fondo-blur);
+    backdrop-filter: blur(50px);
+    width: 80%;
+    max-width: 800px;
+    height: 90px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    transition: all 1s;
+    animation: depeque 1s;
+    justify-content: space-between;
+    padding: 0 20px 0  20px;
+
+}
+
+@keyframes depeque {
+    0% {
+        transform:  scale(0);
+    }
+}
+
+
+.header__title {
+    position: relative;
+}
+
+.header__title h1 {
+    user-select: none;
+    font-size: 1em;
+    font-family: 'Caveat' !important;
+
+    color: #8400ff;
+}
+
+.header__title--sombra {
+    position: absolute;
+    top: 0;
+    user-select: none;
+    font-size: 1em;
+    font-family: 'Caveat' !important;
+
+    color: #d3d3d3;
+}

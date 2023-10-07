@@ -1,0 +1,150 @@
+.contenedor {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: #4A008B;
+    height: 270px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 10px 10px 100px 100px #000000f0;
+    user-select: none;
+
+    cursor: pointer;
+}
+
+.contenedor h1 {
+    margin: 0;
+    z-index: 1000;
+    color: #000;
+}
+
+.fuera {
+    background: #ff0000;
+}
+
+/*Fire*/
+
+.container {
+
+
+    position: absolute;
+    /* margin: 80px auto; */
+    width: calc(60px / 2);
+    height: calc(60px / 2);
+    /* position: relative; */
+    animation-name: flicker;
+    animation-duration: 3ms;
+    animation-delay: 200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+.flame {
+    bottom: 0;
+    position: absolute;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform: rotate(-45deg) scale(1.5, 1.5);
+}
+
+.yellow {
+    left: 15px;
+    width: calc(30px / 2);
+    height: calc(30px / 2);
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+}
+
+.orange {
+    left: 10px;
+    width: calc(40px / 2);
+    height: calc(40px / 2);
+    background: orange;
+    box-shadow: 0px 0px 9px 4px orange;
+}
+
+.red {
+    left: 5px;
+    width: calc(50px / 2);
+    height: calc(50px / 2);
+    background: OrangeRed;
+    box-shadow: 0px 0px 5px 4px OrangeRed;
+}
+
+.white {
+    left: 15px;
+    bottom: -4px;
+    width: calc(30px / 2);
+    height: calc(30px / 2);
+    background: white;
+    box-shadow: 0px 0px 9px 4px white;
+}
+
+.circle {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.blue {
+    width: calc(10px / 2);
+    height: calc(10px / 2);
+    left: 25px;
+    bottom: -25px;
+    background: SlateBlue;
+    box-shadow: 0px 0px 15px 10px SlateBlue;
+}
+
+.black {
+    width: calc(40px / 2);
+    height: calc(40px / 2);
+    left: 10px;
+    bottom: -60px;
+    background: black;
+    box-shadow: 0px 0px 15px 10px black;
+}
+
+@keyframes flicker {
+    0% {
+        transform: rotate(-1deg);
+    }
+
+    20% {
+        transform: rotate(1deg);
+    }
+
+    40% {
+        transform: rotate(-1deg);
+    }
+
+    60% {
+        transform: rotate(1deg) scaleY(1.04);
+    }
+
+    80% {
+        transform: rotate(-2deg) scaleY(0.92);
+    }
+
+    100% {
+        transform: rotate(1deg);
+    }
+}
+
+
+.flame,
+.circle , 
+.contenedor{
+    transition: all .5s;
+}
+
+.apagar {
+    opacity: 0;
+}
+
+.oscurecer{
+    background: #000;
+}

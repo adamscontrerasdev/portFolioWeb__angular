@@ -1,0 +1,69 @@
+.contenedor__padre{
+    position: fixed;
+    bottom: 0;
+    left: 5%;
+    width: 100px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999999;
+}
+
+.contenedor__padre i{
+    position: relative;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+
+    cursor: pointer;
+    user-select: none;
+    z-index: 100;
+
+    transition: all .3s;
+
+
+}
+
+.bxl-linkedin-square{
+    animation: desdeAbajoLink 1.5s;
+}
+
+@keyframes desdeAbajoLink{
+    0%{
+        transform: translate(0, 500px);
+    }
+}
+
+.bxl-github{
+    animation: desdeAbajoGit 1s;
+}
+
+@keyframes desdeAbajoGit{
+    0%{
+        transform: translate(0, 500px);
+    }
+}
+
+svg{
+    position: absolute;
+    bottom: 0;
+
+    user-select: none;
+
+    animation: desdeAbajoLine .5s;
+}
+
+@keyframes desdeAbajoLine{
+    0%{
+        transform: translate(0, 500px);
+    }
+}
+
+.contenedor__padre i:hover{
+    /* color: #525151; */
+    transform: scale(.95);
+}
+
