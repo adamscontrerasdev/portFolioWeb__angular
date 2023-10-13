@@ -5,12 +5,17 @@ import { Component } from '@angular/core';
   templateUrl: './contenido.component.html',
   styleUrls: ['./contenido.component.css']
 })
-export class ContenidoComponent{
+export class ContenidoComponent {
 
 
-  enfoque(clase: String, parrafo:boolean) {
+  enfoque(clase: String, parrafo: boolean) {
     let element = document.querySelector("." + clase);
-    element?.classList.toggle("enfocado");
+    if (element?.classList.contains("box__right--bottom")) {
+      element?.classList.toggle("enfocadoMayor");
+    } else {
+      element?.classList.toggle("enfocado");
+    }
+    /*-----------------------------------------------------------------*/
     if (element) {
       const hijos = element.children;
       console.log(hijos);

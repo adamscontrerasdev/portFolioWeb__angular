@@ -11,6 +11,7 @@ body {
     text-transform: uppercase;
 }
 
+
 div {
     display: grid;
     place-items: center;
@@ -19,9 +20,9 @@ div {
 }
 
 .gradient-background {
-    background: linear-gradient(100deg, #8800ff, #000000, #4a008b);
-    background-size: 180% 180%;
-    animation: gradient-animation 9s ease infinite;
+    background: linear-gradient(100deg, #8800ff, #000000, rgb(52, 0, 150));
+    background-size: 180% 180%; 
+    animation: gradient-animation 10s ease infinite; 
 }
 
 @keyframes gradient-animation {
@@ -38,10 +39,6 @@ div {
     }
 }
 
-#particles-js{
-    background: #000;
-}
-
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
-} 
+}

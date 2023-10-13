@@ -1,0 +1,137 @@
+#educacion {
+    min-width: 100vw;
+    min-height: 100vh;
+    transition: all .5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contenedor__educaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 80%;
+    gap: 1em;
+    padding: 5%;
+    background: #000;
+}
+
+.certificados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 80%;
+    gap: 1em;
+    padding: 5%;
+    transition: all .5s;
+}
+
+.autodidacta,
+.argentina--programa,
+.certificado__cessi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--fondo-blur);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    user-select: none;
+
+    transition: all .5s;
+}
+
+.autodidacta{
+    transform: translate(-5000px);
+}
+.argentina--programa {
+    transform: translate(-5000px);
+}
+
+.certificados {
+    transform: translate(5000px);
+}
+
+
+.autodidacta p,
+.autodidacta h1,
+.argentina--programa h1,
+.argentina--programa p {
+    color: #fff;
+}
+
+.red {
+    background: #f00 !important;
+}
+
+.contenedor--tech {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bxl-html5,
+.bxl-css3,
+.bxl-javascript,
+.bxl-spring-boot,
+.bxl-angular,
+.bxl-java {
+    color: #ffffff6c;
+
+    font-size: 3em;
+}
+
+.certificado {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.certificados__animation {
+    animation: llegarBonito--certificado forwards 1s;
+}
+
+.autodidacta__animation {
+    animation: llegarBonito--autodidacta forwards .5s;
+}
+
+.argentina--programa__animation {
+    animation: llegarBonito--argentinaPrograma forwards 1.5s;
+}
+
+@keyframes llegarBonito--argentinaPrograma {
+    0% {
+        transform: translate(-5000);
+    }
+
+    100% {
+        transform: translate(0)
+    }
+}
+
+@keyframes llegarBonito--autodidacta {
+    0% {
+        transform: translate(-5000px);
+    }
+
+    100% {
+        transform: translate(0)
+    }
+}
+
+@keyframes llegarBonito--certificado {
+    0% {
+        transform: translate(5000px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}

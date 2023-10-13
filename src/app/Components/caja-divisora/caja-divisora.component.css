@@ -2,7 +2,8 @@
     position: relative;
     margin: 0;
     padding: 0;
-    background: #4A008B;
+    background: linear-gradient(to bottom, #4A008B, #000);
+
     height: 270px;
     width: 100%;
     display: flex;
@@ -17,7 +18,7 @@
 .contenedor h1 {
     margin: 0;
     z-index: 1000;
-    color: #000;
+    color: #fff;
 }
 
 .fuera {

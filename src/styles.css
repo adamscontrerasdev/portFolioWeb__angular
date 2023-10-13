@@ -8,14 +8,20 @@ body {
     background: #000;
     overflow-x: hidden;
 
-    scroll-behavior: smooth;
+    
 }
 
 * {
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root{
     --primario:#71008d;
-    --fondo-blur:#7c7c7c83;
+    --fondo-blur:#35353583;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+

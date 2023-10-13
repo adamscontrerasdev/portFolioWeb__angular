@@ -1,0 +1,15 @@
+.contenedor__padre--proyectos{
+    background: linear-gradient(#0000008e, #71008d86, #0000006e);
+    backdrop-filter: blur(2px);
+    height: 270px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.contenedor__padre--proyectos h2{
+    color: #fff;
+    font-size: 2em;
+}
