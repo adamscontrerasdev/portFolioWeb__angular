@@ -10,6 +10,7 @@
     align-items: center;
 
     z-index: 9999999;
+
 }
 
 .contenedor__padre i{
@@ -65,5 +66,20 @@ svg{
 .contenedor__padre i:hover{
     /* color: #525151; */
     transform: scale(.95);
+}
+
+@media (max-width:800px) {
+    .contenedor__padre{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999999;
+    }
 }
 

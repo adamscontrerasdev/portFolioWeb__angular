@@ -1,3 +1,13 @@
 <div class="contenedor__padre--proyectos" id="proyectos">
-
+  <div class="card--proyectos" *ngFor="let data of datas" (click)="verPagina(data.id)">
+    <div class="foto">
+      <img [src]="data.img" alt="Imagen {{ data.id }}" />
+    </div>
+    <div class="title__of__card--proyectos">
+      <h2>{{ data.titulo }}</h2>
+    </div>
+    <h3 class="description">
+      {{data.description}}
+    </h3>
+  </div>
 </div>

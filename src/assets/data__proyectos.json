@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "img": "./../../../assets/proyectos/ADePelis.png",
+    "titulo": "A-DePelis",
+    "description": "Desarrollé un proyecto utilizando Angular para crear una página web que permite a los usuarios consultar información sobre cualquier película. Esta aplicación se conecta a la API de OMDb (Open Movie Database) para obtener datos detallados sobre películas, como títulos, actores, calificaciones y más. Los usuarios pueden buscar películas por título y obtener información relevante de manera rápida y sencilla.",
+    "url":"https://a-depelis.web.app/"
+  }
+]

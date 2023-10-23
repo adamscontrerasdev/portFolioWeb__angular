@@ -9,6 +9,8 @@ body {
     height: 100vh;
     margin: 0;
     text-transform: uppercase;
+
+    overflow-x: hidden;
 }
 
 

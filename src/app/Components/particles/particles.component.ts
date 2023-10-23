@@ -12,6 +12,10 @@ import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSli
 export class ParticlesComponent {
   id = "tsparticles";
 
+  anchoDePagina:number;
+  ngOnInit():void{
+    this.anchoDePagina = document.documentElement.clientWidth;
+}
   /* Starting from 1.19.0 you can use a remote url (AJAX request) to a JSON with the configuration */
   particlesUrl = "http://foo.bar/particles.json";
 
@@ -99,6 +103,7 @@ export class ParticlesComponent {
     //await loadFull(engine);
     await loadSlim(engine);
   }
+
 
 }
 

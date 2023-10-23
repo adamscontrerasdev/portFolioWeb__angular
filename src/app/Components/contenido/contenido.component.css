@@ -60,3 +60,35 @@
 .oculto {
     display: none;
 }
+
+@media (max-width: 1000px) {
+    .contenedor__padre {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        left: 50%;
+        transform: translate(-50%);
+        gap: 1em;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        border-radius: 20px;
+        top: 100px;
+        z-index: 100;
+        margin-bottom: 150px;
+    }
+
+    .enfocado {
+        width: 90%;
+        height: 300px;
+        z-index: 10000;
+    }
+
+    .enfocadoMayor{
+        height: 600px;
+        width: 90%;
+        z-index: 10000;
+    }
+}

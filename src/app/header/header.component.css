@@ -11,6 +11,7 @@
     align-items: center;
     z-index: 99999999;
     user-select: none;
+
 }
 
 .title {
@@ -92,5 +93,32 @@ svg {
 @keyframes llegarDeArriba--folder {
     0% {
         transform: translate(0, -500px);
+    }
+}
+
+@media (max-width:800px) {
+    .rutas {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        z-index: 99999999;
+    
+    }
+
+    .title {
+        margin: 0;
+        position: relative;
+        left: 5%;
+        font-family: caveat;
+        color: #fff;
+    
+        font-size: 2em;
     }
 }

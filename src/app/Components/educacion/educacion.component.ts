@@ -9,11 +9,16 @@ export class EducacionComponent implements AfterViewInit {
   position: number;
   cargado: Boolean = false;
   padre: any;
+  anchoDePagina:number;
   /*-------------------------------------------*/
   @ViewChild('educacion', { static: false }) miComponenteRef: ElementRef;
 
 
   ngOnInit(): void {
+    this.anchoDePagina = document.documentElement.clientWidth;
+    if (this.anchoDePagina < 1920) {
+      this.animarTodos();
+    }
   }
 
   @HostListener('window:scroll', ['$event'])
@@ -22,7 +27,7 @@ export class EducacionComponent implements AfterViewInit {
     /*-----------------------------------------------------------------*/
     this.position = window.scrollY;
     /*----------------------------------------*/
-    if (this.position >= 1100 && !this.cargado) {
+    if (this.position >= 1100 && !this.cargado && this.anchoDePagina >= 1920) {
       // document.documentElement.style.overflow = 'hidden';
       this.animarTodos();
       console.log(this.padre);

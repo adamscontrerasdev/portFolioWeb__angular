@@ -11,6 +11,7 @@ import { NgParticlesModule } from "ng-particles";
 import { EducacionComponent } from './Components/educacion/educacion.component';
 import { DivisorProyectosComponent } from './Components/divisor-proyectos/divisor-proyectos.component';
 import { ProyectosComponent } from './Components/proyectos/proyectos.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -24,11 +25,13 @@ import { ProyectosComponent } from './Components/proyectos/proyectos.component';
     EducacionComponent,
     DivisorProyectosComponent,
     ProyectosComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgParticlesModule
+    NgParticlesModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
